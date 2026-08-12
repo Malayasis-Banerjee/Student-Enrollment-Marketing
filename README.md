@@ -181,7 +181,6 @@ Provides additional analytical insights for deeper investigation.
 ![Extra Info](https://github.com/Malayasis-Banerjee/Student-Enrollment-Marketing/blob/main/Extra%20info.png
 )
 
-
 ## 🧹 Data Cleaning & Transformation
 
 The data preparation process included the following steps:
@@ -205,18 +204,18 @@ The data preparation process included the following steps:
 ⚠️ **Note:**  
 - Missing values should be handled according to the **business meaning** of each column.  
 - Categorical fields should **not automatically be filled with the mode**, as this could introduce misleading information.
-
-
+  
 ## 📐 Important KPIs
 
 Examples of the analytical measures used in the dashboard include:
 
-### 🎯 Total Students
-```DAX
+### 🎯 Total Student
+
 Total Students =
 DISTINCTCOUNT(Main_Data[Student_ID])
 
 ### 🎯 Paid Students
+
 Paid Students =
 CALCULATE(
     [Total Students],
@@ -246,7 +245,6 @@ DIVIDE(
     [Total Leads],
     0
 )
-
 
 ## 🛠️ Tools & Technologies
 
